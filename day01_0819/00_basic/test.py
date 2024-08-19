@@ -11,8 +11,7 @@ print("hello world")
  6. 딕셔너리 : {}
  7. 불리언 : T/F
  
-
 '''
 
 # 주석 : 번역 되지 않는 코드
-# Literal : 값 
+# Literal : 값
