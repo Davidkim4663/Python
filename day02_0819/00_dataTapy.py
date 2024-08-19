@@ -31,3 +31,15 @@ print(10>3)
 print("안녕")
 print('안녕')
 print('''안녕''')
+
+# 타입을 변경하는 방법
+# "123" (str 문자열) -> 123 (int 정수)
+# int() 정수 타임으로 변경하는 함수
+# float() 실수 타임으로 변경하는 반환 함수
+# str() 문자열 타임으로 변경하는 반환 함수
+
+print(type(int("123"))) # str -> int
+print(type(str(123)))
+print(type(float("123"))) # str -> float
+print(type(float(123))) # int -> float
+print(type(int(1.23))) # float -> int
