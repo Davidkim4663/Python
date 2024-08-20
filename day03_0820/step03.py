@@ -99,3 +99,5 @@ tax = basic_salary * 0.1
 
 total = (basic_salary + sudang) - tax
 print("total = " + str(total))
+
+# 과제_ 연산자
