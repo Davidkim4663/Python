@@ -8,7 +8,20 @@
 	해당 상품 가격이 현금보다 클 경우, "구입불가" 메세지를 출력하시오.
 '''
 import random
+# cash
+cash = 50000
 
-현금 = 3000
-메뉴1 = 2500
-메뉴2 = 3500
+# keyosk menu
+print("============ 버거킹 =========== ")
+order_selection = random.randint(0, 1)
+take_in = order_selection == 0 # 먹고가기
+take_out = order_selection == 1 # 포장하기
+
+# menu
+if take_in : print("매장식사를 선택하셨습니다.")
+
+
+
+
+
+
