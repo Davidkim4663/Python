@@ -10,7 +10,7 @@ from random import randint
 
 divisor = random.randint(1, 100)
 print("약수 = " , divisor,"\n")
-
+# 권유남
 i = 1
 cnt = 0
 while True :
