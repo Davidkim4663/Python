@@ -20,10 +20,10 @@ if money >= 20000:
     print("택시를 타고 간다.")
 # (2) 만약에 돈이 5만원 이상이면
 if money >= 50000:
-    # 들여쓰기 [키보드에서 Tab 키]
-    print('옷 구매')  # True
+# 들여쓰기 [키보드에서 Tab 키]
+ print('옷 구매')  # True
 else:  # 아니면 (5만원 이상이 아니라는 뜻)
-    print('아이 쇼핑 한다.')  # False
+ print('아이 쇼핑 한다.')  # False
 
 # (3) 만액에 돈(변수)이 2만원 이상이면
 if money >= 20000:
@@ -61,11 +61,9 @@ print(score2, " ", score2_Str)
 
 # ex3 3개의 정수를 입력받아서 오름차순으로 출력하시오
 i = 1
-while i <= 3 :
- firstNum = int(input("정수1를 입력하세요 >> "))
- secondNum = int(input("정수2를 입력하세요 >> "))
- thirdNum = int(input("정수3를 입력하세요 >> "))
- print(firstNum, " ", secondNum, " ", thirdNum)
- i += 1
-
-
+while i <= 3:
+    firstNum = int(input("정수1를 입력하세요 >> "))
+    secondNum = int(input("정수2를 입력하세요 >> "))
+    thirdNum = int(input("정수3를 입력하세요 >> "))
+    print(firstNum, " ", secondNum, " ", thirdNum)
+    i += 1
