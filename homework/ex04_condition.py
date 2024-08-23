@@ -2,6 +2,7 @@
 # [지문]  가위바위보 게임 구현하기.
 # [조건] 가위가 '0' 이고 바위가 '1' 이고 보가 '2' 일때 플레이어1와 플레이어2 가 있습니다. 승리자 판단과 무승부 경우의수를 출력하시오.
 import random
+
 print("[ 가위바위보 게임]")
 askingJoin = int(input("게임을 시작 하시겠습니까? [1] Play [2] Quit\n"))
 if askingJoin == 1:
@@ -45,7 +46,7 @@ if askingJoin == 1:
                 break
     i += 1
 elif askingJoin == 2:
-print("게임을 종료합니다.")
+    print("게임을 종료합니다.")
 # [입력 조건]
 #
 # 플레이어1 과 플레이어2 에게 각각 0 또는 1 또는 2 를 입력을 받습니다.
@@ -115,7 +116,7 @@ ball3_num = ball3
 i = 1
 cnt = 0
 print()
-while True :
+while True:
     player1 = random.randint(1, 30)
     player2 = random.randint(1, 30)
     player3 = random.randint(1, 30)
@@ -124,12 +125,12 @@ while True :
     checkingSame_num3 = ball3_num == player3
 
     checkingTotal = (checkingSame_num1 == True) and (checkingSame_num2 == True) and (checkingSame_num3 == True)
-    if checkingTotal :
+    if checkingTotal:
         cnt += 1
-        if cnt == 5 :
+        if cnt == 5:
             print(f"공[1] = [{ball1} : {player1}]\n공[2] = [{ball2} : {player2}]\n공[3] = [{ball3} : {player3}] ")
             print("맞췄다!")
             break
-        else : continue
+        else:
+            continue
 i += 1
-

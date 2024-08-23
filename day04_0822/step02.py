@@ -60,7 +60,7 @@ else:
 print(score2, " ", score2_Str)
 
 # ex3 3개의 정수를 입력받아서 오름차순으로 출력하시오
-i = 1
+i = 187
 while i <= 3:
     firstNum = int(input("정수1를 입력하세요 >> "))
     secondNum = int(input("정수2를 입력하세요 >> "))
