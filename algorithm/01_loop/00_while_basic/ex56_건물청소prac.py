@@ -21,10 +21,3 @@
 	    직원2 -- [15층 16층]
 	    직원3 -- [17층 18층]
 '''
-building = 50
-i = 1
-while i <= building :
-    employeer_2 = i % 6 == 3 or i % 6 == 4
-    if employeer_2 :
-        print(i, end=" ")
-    i += 1
