@@ -25,6 +25,18 @@ while True:
 2. 3 혹은 6 혹은 9 가 포함되어 있는 수는 박수 출력
 3. 1-> 1 , 1->2 , 3-> 박수 , 13-> 박수 , 33 -> 박수박수 , 36-> 박수박수
 """
+scope = int(input("정수를 입력하세요 \n>> "))
+i = 1
+while i <= scope :
+    checking_unit_ten = i // 10 == 3 or i // 10 == 6 or i // 10 == 9
+    checking_unit_one = i % 10 == 3 or i % 10 == 6 or i % 10 == 9
+    clap_twice = checking_unit_ten and checking_unit_one # 33,, 36, 39
+    clap_once = checking_unit_ten or checking_unit_one # 30 31, 23 etc
+    if clap_twice : print("박수박수")
+    elif clap_once : print("박수")
+    else : print(i)
+    i += 1
+
 
 """
 [문제4]
