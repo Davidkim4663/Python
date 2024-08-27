@@ -22,7 +22,7 @@ for i in range(ex1_num):
     *****
     ****
     ***
-    **
+    **11
     *
 """
 print()
