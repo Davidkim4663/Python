@@ -17,36 +17,33 @@
   			- 리스트를 벗어나기 때문에 앞으로 이동 후 채운다.
 '''
 import random
-
-a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
 r = random.randint(0, 9)
-print("r =", r)
+# r = 9
+a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+print("r = ", r)
+print("변경 전 = ", a)
 
-# 방법1)
 value = 1
-count = 0
-i = r  # 인덱스 3부터 시작해서
-while count < r:  # count가 3이 될때까지 반복
-    # print(i, end=" ")
-    a[i] = value
-    value += 1
-    i += 1
-    count += 1
-    if i >= len(a):
-        i = 0
-print("a =", a)
+cnt = 0
+i = r # index 3부터 시작해서
+# 방법 1)
+# while cnt < r : #cnt가 3이 될때까지 반복
+#     # print(i , end="")
+#     a[i] = value
+#     value += 1
+#     i += 1
+#     cnt += 1
+#
+#     if i >= len(a) :
+#         i = 0
+# print("a = ", a)
 
-# 방법2)
-value = 1
-count = 0
-i = r  # 인덱스 3부터 시작해서
-while count < r:  # count가 3이 될때까지 반복
+# 방법 2)
+while cnt < r : #cnt가 3이 될때까지 반복
+    # print(i , end="")
     a[i % len(a)] = value
     value += 1
     i += 1
-    count += 1
+    cnt += 1
 
-print("a =", a)
-
-
+print("a = ", a)
