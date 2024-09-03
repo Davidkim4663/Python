@@ -21,7 +21,6 @@ def test2(var1):
 
 print(test2(var1))
 
-
 # 전역
 def test3():
     global var1
